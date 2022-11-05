@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--Light-gray);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Using Grid to create the layout */
+
+.main-layout{
+    height: min-content; 
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 2fr 1fr; */
+    grid-auto-rows: min-content;
+    border-radius: 1.375rem;
+    text-align: center;
+    justify-items: center;
+}
+
+/* QR Code Image */
+
+.qr-image img{
+    width: 23.725rem;
+    padding: 1.063rem 1.063rem 0rem 1.063rem;
+    border-radius: 28px;
+}
+
+/* Descritption section */
+
+.description{
+width: 22.275rem;
+/* padding: ; */
+}
+
+.description-title{
+    font-size: 1.725rem;
+    font-weight: 700;
+    color: var(--Dark-blue);
+    padding-top: 1.625rem;
+}
+
+.description-para{
+    font-size: 1.275rem;
+    font-weight: 500;
+    color: var(--Grayish-blue);
+    padding: 1.225rem 0.825rem 2.875rem 0.825rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+
+    .qr-image img{
+        width: 19.625rem;
+        padding: 1.063rem 1.063rem 0rem 1.063rem;
+        border-radius: 28px;
+    }
+
+    .description{
+        width: 20.875rem;
+        /* padding: ; */
+        }
+        
+        .description-title{
+            font-size: 1.475rem;
+            font-weight: 700;
+            color: var(--Dark-blue);
+            padding: 1.625rem 2rem 0rem 1.875rem;
+        }
+        
+        .description-para{
+            font-size: 1.150rem;
+            font-weight: 500;
+            color: var(--Grayish-blue);
+            padding: 1.225rem 1.675rem 2.875rem 1.675rem;
+        }
+
+}
