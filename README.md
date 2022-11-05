@@ -18,7 +18,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
  
- - Build the Product Preview Card using pure html and css.
+ - Built the Qr Code Card component using Html and CSS.
 
 ### The challenge
 
