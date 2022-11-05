@@ -28,6 +28,7 @@ body{
 /* Using Grid to create the layout */
 
 .main-layout{
+    transform: scale(0.9);
     height: min-content; 
     background-color: var(--White);
     display: grid;
